@@ -17,15 +17,13 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-
 title: Aashwin Basnet
-email: aashwin.basnet@cern.ch
 description: >- # this means to ignore newlines until "baseurl:"
-    Hello. Welcome to my page! Stay tuned for further updates
+    Postdoctoral Research Associate at Texas A&M University
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://abasnet97.github.io" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  jekyll
+#twitter_username: jekyllrb
+github_username:  abasnet97
 
 # Build settings
 theme: minima
