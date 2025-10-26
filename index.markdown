@@ -28,6 +28,10 @@ title: About Me
       focusing on the muon (GEM and CSC) and outer-tracker systems for the
       High-Luminosity Large Hadron Collider (HL-LHC).
     </p>
+
+    <p style="font-size:1.1em; line-height:1.6;">
+      Beyond physics, I enjoy playing and watching tennis and working out. In tennis, I love watching Carlos Alcaraz, Jannik Sinner, and Iga Swiatek. I am also an avid soccer fan, and I root for Manchester United (tough choice, I am aware).
+    </p>
   </div>
 </section>
 
