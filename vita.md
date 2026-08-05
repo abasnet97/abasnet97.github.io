@@ -9,7 +9,7 @@ permalink: /vita/
   </li>
 
   <li>
-    PhD in physics, Ohio State University, OH (2019 - 2025)<br>
+    PhD in physics, The Ohio State University, OH (2019 - 2025)<br>
   </li>
 
   <li>

@@ -23,14 +23,13 @@ title: About Me
     <p style="font-size:1.1em; line-height:1.6;">
       For my doctoral research, I searched for new physics in top-quark pairs produced in association
       with a photon using the model-agnostic framework of the Standard Model Effective Field Theory (SMEFT).
-      As a postdoctoral researcher, I work on measurements of non-resonant Higgs-boson pair production
-      in the final state with four bottom quarks. I am also involved in CMS detector upgrade efforts,
-      focusing on the muon (GEM and CSC) and outer-tracker systems for the
-      High-Luminosity Large Hadron Collider (HL-LHC).
+      As a postdoctoral researcher, I am working on measurements of non-resonant Higgs-boson pair production (HH)
+      in the final state with four bottom quarks (4b). I am also involved in the Phase-II upgrade of the Outer Tracker Data AcQuisition (DAQ) system for the
+      High-Luminosity Large Hadron Collider (HL-LHC). The HL-LHC is the successor of the LHC and is set to begin its operations from 2030.
     </p>
 
     <p style="font-size:1.1em; line-height:1.6;">
-      Beyond physics, I enjoy playing and watching tennis and working out. In tennis, I love watching Carlos Alcaraz, Jannik Sinner, and Iga Swiatek. I am also an avid soccer fan, and I root for Manchester United (tough choice, I am aware).
+      Beyond physics, I enjoy playing and watching tennis and working out. My favorite active tennis players are Carlos Alcaraz, Jannik Sinner, and Iga Swiatek. Roger Federer is an absolute idol to me. I am also an avid football fan, and I root for Manchester United (tough choice these days, I am aware).
     </p>
   </div>
 </section>
