@@ -11,7 +11,7 @@ In experimental particle physics, all members of a collaboration are typically i
   <li>
     <b>Improved results on Higgs boson pair production in the 4b final state</b><br>
     <i>CMS Collaboration</i>, <a href="https://arxiv.org/pdf/2604.27044, ">arXiv:2604.27044</a>
-    <i>Submitted to Physical Review D
+    <i>Submitted to Physical Review D</i>
   </li>
 
   <li>
