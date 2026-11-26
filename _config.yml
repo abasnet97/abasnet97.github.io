@@ -19,16 +19,37 @@
 # in the templates via {{ site.myvariable }}.
 title: Aashwin Basnet
 description: >- # this means to ignore newlines until "baseurl:"
-    Postdoctoral Research Associate at Texas A&M University
+    Aashwin Basnet is a Postdoctoral Research Associate at Texas A&M University
+    and a member of the CMS Collaboration at CERN, working on Higgs boson pair
+    production and effective field theory searches for new physics.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://abasnet97.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://abasnet97.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 #twitter_username: jekyllrb
 github_username:  abasnet97
 
 # Build settings
 theme: minima
-#plugins:
-#  - jekyll-feed
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+author:
+  name: Aashwin Basnet
+  email: abasnet@tamu.edu
+
+# Default social-card image used by jekyll-seo-tag (it reads page.image)
+defaults:
+  - scope:
+      path: ""
+    values:
+      image: /images/abasnet.jpg
+
+# Pages shown in the header navigation, in this order
+header_pages:
+  - index.markdown
+  - publications.md
+  - vita.md
+  - blog.md
 
 include:
   - google6584cea0712c5d96.html

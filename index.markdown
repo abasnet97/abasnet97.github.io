@@ -1,6 +1,6 @@
 ---
-layout: home
-title: About Me
+layout: page
+title: About
 ---
 
 <section id="bio" style="margin:40px 0; text-align:center;">
