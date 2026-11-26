@@ -6,11 +6,6 @@ permalink: /featured/
 
 <ul class="cards">
   <li>
-    <b>Breakthrough Prize in Fundamental Physics 2025, part of the CMS Collaboration</b><br>
-    <a href="https://breakthroughprize.org/Laureates/1/L3994" target="_blank" rel="noopener">See the list of laureates for the CMS Collaboration</a>
-  </li>
-
-  <li>
     <b>My work featured in CERN Courier</b><br>
     <a href="https://cerncourier.com/a/using-top-quarks-to-probe-natures-secrets/" target="_blank" rel="noopener">Read the article</a>
   </li>
