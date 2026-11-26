@@ -3,11 +3,11 @@ layout: page
 title: Vita
 permalink: /vita/
 ---
-<p><a href="{{ '/assets/files/Aashwin_Basnet_CV.pdf' | relative_url }}" target="_blank" rel="noopener"><b>Download my full CV (PDF)</b></a></p>
+<p><a class="btn" href="{{ '/assets/files/Aashwin_Basnet_CV.pdf' | relative_url }}" target="_blank" rel="noopener">Download full CV (PDF)</a></p>
 
 ## Education
 
-<ul>
+<ul class="cards">
   <li><b>Ph.D. in Physics</b>, The Ohio State University, Columbus, OH (Aug. 2019 – Jul. 2025)</li>
   <li><b>B.Sc. in Physics and Mathematics</b> (<i>summa cum laude</i>; minor in Religious Studies), Trinity College, Hartford, CT (Aug. 2015 – May 2019). Salutatorian of the class of 2019.</li>
   <li><b>Study abroad exchange</b>, University of Edinburgh, UK (Sep. 2017 – May 2018)</li>
@@ -15,7 +15,7 @@ permalink: /vita/
 
 ## Positions
 
-<ul>
+<ul class="cards">
   <li>
     <b>Postdoctoral Research Associate</b>, Texas A&amp;M University, College Station, TX (Aug. 2025 – Present)<br>
     Mitchell Institute for Fundamental Physics and Astronomy. Advisor: Prof. Stephane Cooperstein.
@@ -33,7 +33,7 @@ permalink: /vita/
 
 ## Service
 
-<ul>
+<ul class="cards">
   <li><b>Higgs Physics Analysis Group Combine Contact</b>, CMS Collaboration (Sep. 2026 – Present)</li>
   <li>CMS Analysis Review Committee member and institutional lead reviewer for several CMS analyses</li>
   <li>CMS Detector-on-Call expert (Cathode Strip Chambers) and Data Quality Monitoring expert</li>
@@ -41,7 +41,7 @@ permalink: /vita/
 
 ## Selected Talks
 
-<ul>
+<ul class="cards">
   <li>U.S. CMS Collaboration Meeting, University of Maryland (Jun. 2026): <i>Improved measurement of the di-Higgs production in 4b final state with partial Run 3 CMS data</i></li>
   <li>Invited seminar, Purdue University HEP Seminar (Apr. 2025): <i>Probing Heavy New Physics at the LHC with Top Quarks and Effective Field Theory</i></li>
   <li>16th International Workshop on Top Quark Physics, Traverse City, MI (Sep. 2023): <i>Probing EFT models using top quark production in multilepton final states</i></li>
@@ -50,7 +50,7 @@ permalink: /vita/
 
 ## Schools and Workshops
 
-<ul>
+<ul class="cards">
   <li>INFN School of Statistics, Paestum, Italy (May 2024)</li>
   <li>LPC EFT Workshop, University of Notre Dame (Apr. 2024)</li>
   <li>Top Quark Physics at the Precision Frontier, Purdue University (Oct. 2023)</li>
@@ -60,7 +60,7 @@ permalink: /vita/
 
 ## Honors and Awards
 
-<ul>
+<ul class="cards">
   <li><a href="https://breakthroughprize.org/Laureates/1/L3994" target="_blank" rel="noopener">Breakthrough Prize in Fundamental Physics 2025</a> (co-recipient, CMS Collaboration)</li>
   <li>The Ohio State University: Hazel Brown Teaching Award (2020, 2021)</li>
   <li>Trinity College: Salutatorian (2019); Physics Senior Prize; Phi Beta Kappa, Sigma Pi Sigma and Pi Mu Epsilon; 2018 Trjitzinsky Award (American Mathematical Society)</li>

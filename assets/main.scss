@@ -1,70 +1,286 @@
 ---
 # Front matter required so Jekyll processes this file; overrides minima's stylesheet.
 ---
+$content-width: 880px;
+$base-font-size: 17px;
+$spacing-unit: 28px;
 @import "minima";
 
-.profile {
-  margin: 20px 0 40px;
-  text-align: center;
+// ---------- Design tokens ----------
+:root {
+  color-scheme: light dark;
+  --bg: #faf8f7;
+  --surface: #ffffff;
+  --text: #1f1b1b;
+  --muted: #6a6060;
+  --border: #e8e1df;
+  --accent: #500000;
+  --accent-hover: #7a1a1a;
+  --accent-soft: #f5eaea;
+  --on-accent: #ffffff;
+  --shadow: 0 1px 2px rgba(60, 20, 20, 0.06), 0 6px 20px rgba(60, 20, 20, 0.06);
+  --font-body: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-head: "Source Serif 4", Georgia, "Times New Roman", serif;
+  --radius: 12px;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #141111;
+    --surface: #1d1919;
+    --text: #ece6e5;
+    --muted: #a99f9d;
+    --border: #342d2d;
+    --accent: #e8a0a0;
+    --accent-hover: #f5bcbc;
+    --accent-soft: #2b1d1d;
+    --on-accent: #2a0a0a;
+    --shadow: 0 1px 2px rgba(0, 0, 0, 0.4), 0 6px 20px rgba(0, 0, 0, 0.35);
+  }
+}
+
+// ---------- Base ----------
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-body);
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-head);
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  line-height: 1.25;
+  color: var(--text);
+}
+
+h2 {
+  font-size: 1.55rem;
+  margin: 2.2rem 0 0.9rem;
+}
+
+a {
+  color: var(--accent);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+
+  &:visited { color: var(--accent); }
+  &:hover { color: var(--accent-hover); text-decoration: underline; }
+}
+
+hr, .site-header, .site-footer { border-color: var(--border); }
+
+::selection { background: var(--accent); color: var(--on-accent); }
+
+.page-content { padding: 36px 0 56px; }
+
+// ---------- Header ----------
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  min-height: 0;
+  background: color-mix(in srgb, var(--bg) 88%, transparent);
+  backdrop-filter: saturate(160%) blur(10px);
+  -webkit-backdrop-filter: saturate(160%) blur(10px);
+  border-top: 3px solid var(--accent);
+  border-bottom: 1px solid var(--border);
+
+  .wrapper { display: flex; align-items: center; min-height: 58px; &::after { display: none; } }
+}
+
+.site-title {
+  font-family: var(--font-head);
+  font-size: 1.25rem;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  line-height: 1;
+  color: var(--text) !important;
+  &:hover { color: var(--accent) !important; text-decoration: none; }
+}
+
+.site-nav {
+  line-height: 1;
+  float: none;
+  margin-left: auto;
+
+  .page-link {
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: var(--muted);
+    line-height: 1;
+    padding: 8px 12px;
+    margin-left: 4px;
+    border-radius: 8px;
+    &:hover { color: var(--accent); background: var(--accent-soft); text-decoration: none; }
+  }
+
+  .menu-icon > svg path { fill: var(--muted); }
+
+  @media screen and (max-width: 600px) {
+    position: static;
+    background: transparent;
+    border: 0;
+
+    label[for="nav-trigger"] { top: auto; right: auto; position: static; }
+    .trigger {
+      position: absolute;
+      top: 58px;
+      right: 16px;
+      min-width: 180px;
+      padding: 8px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+    }
+    .page-link { display: block; margin: 0; padding: 10px 12px; }
+  }
+}
+
+// ---------- Buttons ----------
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 9px 18px;
+  font-size: 0.92rem;
+  font-weight: 500;
+  line-height: 1.2;
+  color: var(--on-accent) !important;
+  background: var(--accent);
+  border: 1px solid var(--accent);
+  border-radius: 999px;
+  text-decoration: none !important;
+  transition: background 0.15s, border-color 0.15s, transform 0.15s;
+
+  &:hover { background: var(--accent-hover); border-color: var(--accent-hover); transform: translateY(-1px); }
+
+  &--ghost {
+    color: var(--text) !important;
+    background: var(--surface);
+    border-color: var(--border);
+    &:hover { color: var(--accent) !important; background: var(--accent-soft); border-color: var(--accent); }
+  }
+
+  .icon { width: 16px; height: 16px; fill: currentColor; }
+}
+
+// ---------- Home hero ----------
+.hero {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  gap: 40px;
+  align-items: center;
+  padding: 12px 0 36px;
+  border-bottom: 1px solid var(--border);
 
   &__photo {
-    display: block;
-    width: 240px;
-    max-width: 100%;
-    height: auto;
-    margin: 0 auto;
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+    object-position: 50% 25%;
+    border-radius: 50%;
+    border: 4px solid var(--surface);
+    box-shadow: var(--shadow), 0 0 0 2px var(--accent);
+  }
+
+  &__eyebrow {
+    margin: 0 0 6px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
   }
 
   &__name {
-    margin: 20px 0 10px;
+    margin: 0 0 10px;
+    font-size: clamp(2.1rem, 5vw, 3rem);
+    line-height: 1.1;
   }
 
-  &__bio {
-    max-width: 800px;
-    margin: 15px auto;
-    text-align: left;
-    font-size: 1.1em;
-    line-height: 1.6;
+  &__affil { margin: 0 0 20px; font-size: 1.05rem; color: var(--muted); }
+
+  &__links { display: flex; flex-wrap: wrap; gap: 10px; margin: 0; }
+}
+
+.bio {
+  max-width: 720px;
+  h2 { margin-top: 2rem; }
+  p { font-size: 1.04rem; margin-bottom: 1.1rem; }
+}
+
+// ---------- Page content ----------
+.post-header { margin-bottom: 1.4rem; }
+.post-title {
+  font-size: clamp(1.9rem, 4vw, 2.5rem);
+  letter-spacing: -0.02em;
+}
+
+.post-content h2:first-child { margin-top: 0.5rem; }
+
+ul.cards {
+  list-style: none;
+  margin: 0 0 1.5rem;
+  padding: 0;
+  display: grid;
+  gap: 12px;
+
+  > li {
+    margin: 0;
+    padding: 16px 20px;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-left: 3px solid var(--accent);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    font-size: 0.98rem;
+    line-height: 1.55;
+
+    b { font-family: var(--font-head); font-size: 1.05rem; font-weight: 600; }
   }
 }
 
-.connect {
-  margin: 40px 0;
-  padding-top: 30px;
-  border-top: 1px solid $grey-color-light;
-  text-align: center;
+.post-list > li { margin-bottom: 28px; }
+.post-meta { color: var(--muted); font-size: 0.85rem; }
 
-  &__links {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 8px 24px;
-    justify-content: center;
-    font-size: 1.1em;
+blockquote { color: var(--muted); border-left: 3px solid var(--accent); }
+pre, code { background: var(--accent-soft); border-color: var(--border); }
+table, th, td { border-color: var(--border); }
 
-    a {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      text-decoration: none;
-    }
-  }
+// ---------- Footer ----------
+.site-footer {
+  padding: 32px 0 40px;
+  background: var(--surface);
+  border-top: 1px solid var(--border);
+  color: var(--muted);
+  font-size: 0.9rem;
 
-  .icon {
-    fill: currentColor;
-  }
+  p { margin: 0 0 6px; }
+  .footer-name { font-family: var(--font-head); font-size: 1.1rem; font-weight: 600; color: var(--text); }
+  .footer-links a { margin-right: 16px; }
 }
 
+// ---------- 404 ----------
 .error-page {
   max-width: 600px;
   margin: 10px auto;
   text-align: center;
+  h1 { margin: 30px 0; font-size: 4em; line-height: 1; letter-spacing: -1px; }
+}
 
-  h1 {
-    margin: 30px 0;
-    font-size: 4em;
-    line-height: 1;
-    letter-spacing: -1px;
+// ---------- Mobile ----------
+@media screen and (max-width: 700px) {
+  .hero {
+    grid-template-columns: minmax(0, 1fr);
+    justify-items: center;
+    text-align: center;
+    gap: 22px;
+    &__links { justify-content: center; }
   }
+  .hero__photo { width: 180px; height: 180px; }
+  ul.cards > li { padding: 14px 16px; }
 }

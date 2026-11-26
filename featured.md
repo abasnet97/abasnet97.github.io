@@ -4,7 +4,7 @@ title: Featured
 permalink: /featured/
 ---
 
-<ul>
+<ul class="cards">
   <li>
     <b>Breakthrough Prize in Fundamental Physics 2025, part of the CMS Collaboration</b><br>
     <a href="https://breakthroughprize.org/Laureates/1/L3994" target="_blank" rel="noopener">See the list of laureates for the CMS Collaboration</a>

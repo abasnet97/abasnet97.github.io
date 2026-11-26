@@ -7,10 +7,10 @@ In experimental particle physics, all members of a collaboration are typically i
 
 ## Refereed CMS Publications
 
-<ul>
+<ul class="cards">
   <li>
     <b>Improved results on Higgs boson pair production in the 4b final state</b><br>
-    <i>CMS Collaboration</i>, <a href="https://arxiv.org/abs/2604.27044" target="_blank">arXiv:2604.27044</a>
+    <i>CMS Collaboration</i>, <a href="https://arxiv.org/abs/2604.27044" target="_blank">arXiv:2604.27044</a>,
     <i>Accepted for publication in Physical Review D</i> (DOI: <a href="https://doi.org/10.1103/w2zp-fckl" target="_blank">10.1103/w2zp-fckl</a>)
   </li>
 
@@ -39,17 +39,17 @@ In experimental particle physics, all members of a collaboration are typically i
 
 ## CMS Manuscripts Under Review
 
-<ul>
+<ul class="cards">
   <li>
     <b>Search for top quark flavor-changing neutral currents in multilepton final states using an effective field theory approach in proton&ndash;proton collisions at &radic;s = 13 TeV</b><br>
-    <i>CMS Collaboration</i>, <a href="https://arxiv.org/abs/2608.19547" target="_blank">arXiv:2608.19547</a>
+    <i>CMS Collaboration</i>, <a href="https://arxiv.org/abs/2608.19547" target="_blank">arXiv:2608.19547</a>,
     <i>Submitted to Physical Review Letters</i>
   </li>
 </ul>
 
 ## Non-refereed CMS Publications
 
-<ul>
+<ul class="cards">
   <li>
     <b>Probing EFT models using top quark production in multilepton final states</b><br>
     <i>A. Basnet</i>, Proceedings for presentation at 16th International Workshop on Top Quark Physics, Traverse City, MI, US, 24-29 Sep. 2023,
@@ -66,7 +66,7 @@ In experimental particle physics, all members of a collaboration are typically i
 
 ## Non-CMS Publications
 
-<ul>
+<ul class="cards">
   <li>
     <b>Ultrafast electron microscopy for investigating fundamental physics phenomena</b><br>
     <i>Prawesh Dahal, Akrit Mudvari, Aashwin Basnet, Parker W. Brown, Brett Barwick</i>, <a href="https://www.spiedigitallibrary.org/conference-proceedings-of-spie/9956/1/Ultrafast-electron-microscopy-for-investigating-fundamental-physics-phenomena/10.1117/12.2237392.full" target="_blank">Proc. SPIE 9956, Ultrafast Nonlinear Imaging and Spectroscopy IV, 995604 (3 October 2016)</a>
