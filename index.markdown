@@ -50,7 +50,7 @@ title: About Me
            alt="GitHub" width="28" style="vertical-align:middle;"> GitHub
     </a>
 
-    <a href="mailto:aashwin.basnet@tamu.edu" style="margin:0 10px; text-decoration:none;">
+    <a href="mailto:abasnet@tamu.edu" style="margin:0 10px; text-decoration:none;">
       <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/gmail.svg"
            alt="Email" width="28" style="vertical-align:middle;"> Email
     </a>
