@@ -37,6 +37,16 @@ In experimental particle physics, all members of a collaboration are typically i
 
 </ul>
 
+## CMS Manuscripts Under Review
+
+<ul>
+  <li>
+    <b>Search for top quark flavor-changing neutral currents in multilepton final states using an effective field theory approach in proton&ndash;proton collisions at &radic;s = 13 TeV</b><br>
+    <i>CMS Collaboration</i>, <a href="https://arxiv.org/abs/2608.19547" target="_blank">arXiv:2608.19547</a>
+    <i>Submitted to Physical Review Letters</i>
+  </li>
+</ul>
+
 ## Non-refereed CMS Publications
 
 <ul>
