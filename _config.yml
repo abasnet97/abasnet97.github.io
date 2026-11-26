@@ -49,6 +49,7 @@ header_pages:
   - index.markdown
   - publications.md
   - vita.md
+  - featured.md
   - blog.md
 
 include:
