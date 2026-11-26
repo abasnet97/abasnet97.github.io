@@ -4,6 +4,8 @@ title: Blog
 permalink: /blog/
 ---
 
+Thoughts on particle physics, effective field theory, and life as an experimentalist at the LHC.
+
 {% if site.posts.size == 0 %}
 Posts coming soon.
 {% else %}
